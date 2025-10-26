@@ -2,7 +2,7 @@
 
 Chrome extension that extracts date/time from photo EXIF data and manages menstrual flow records with AI estimation
 
-> **Note**: This project was created for the **Google Chrome Built-in AI Challenge 2025**. Most of the code was written with the assistance of **Claude Code** (claude.ai/code), demonstrating AI-assisted development capabilities.
+> **Note**: This project was created for the **Google Chrome Built-in AI Challenge 2025**. Most of the code was written with the assistance of **Claude Code** (claude.ai/code).
 
 ## Features
 

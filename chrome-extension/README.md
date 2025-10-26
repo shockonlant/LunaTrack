@@ -7,7 +7,7 @@ Chrome extension that extracts date/time from photo EXIF data and manages menstr
 ## Features
 
 - 📷 Auto-extract photo date/time from EXIF data
-- 🤖 **AI-powered flow estimation** using Chrome Prompt API (Phase 2 - Implemented)
+- 🤖 **AI-powered flow estimation** using Chrome Prompt API 
 - 💾 Store data in Chrome Storage (local)
 - 📊 History view with delete functionality
 - 🔒 Complete local processing (no external data transmission except Chrome built-in AI)

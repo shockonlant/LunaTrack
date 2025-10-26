@@ -32,12 +32,6 @@ Chrome extension that extracts date/time from photo EXIF data and manages menstr
 
 6. Extension will appear in the toolbar
 
-### 2. Icon Preparation (Optional)
-
-Place icon images in the `icons/` folder:
-- icon16.png (16x16)
-- icon48.png (48x48)
-- icon128.png (128x128)
 
 ## How to Use
 

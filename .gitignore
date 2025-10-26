@@ -59,10 +59,8 @@ pids
 # Coverage directory used by tools like istanbul
 coverage/
 
-# test data
-10.jpg
-15.jpg
-30.jpg
+# test image data - used mock image but still looks senstieve data
+testimage/
 
 # planning file
 CLAUDE.md

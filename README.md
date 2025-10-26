@@ -46,6 +46,7 @@ Chrome extension that extracts date/time from photo EXIF data and manages menstr
 3. **Select Photo**
    - Select an image file from your device (JPEG, PNG supported)
    - Date/time will be auto-extracted from EXIF data
+   - For simple testing purpose, please use images inside testimage.zip used during development (Note: we used colored water on pads to simulate menstrual flow — these are not real samples.)
 
 4. **AI Estimation (Automatic)**
    - After selecting a photo, AI automatically estimates menstrual flow volume (ml)

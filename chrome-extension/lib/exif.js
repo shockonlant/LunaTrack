@@ -1,6 +1,7 @@
 /**
  * Minified by jsDelivr using Terser v5.37.0.
- * Original file: /npm/exif-js@2.3.0/exif.js
+ * Original file: /npm/exif-js@2.3.0/exif.js　Copyright (c) 2008 Jacob Seidelin
+ * https://github.com/exif-js/exif-js/blob/master/LICENSE.md
  *
  * Do NOT use SRI with dynamically generated files! More information: https://www.jsdelivr.com/using-sri-with-dynamic-files
  */

@@ -1,0 +1,14 @@
+# Chrome Extension specific
+*.crx
+*.pem
+*.zip
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+# Logs
+*.log

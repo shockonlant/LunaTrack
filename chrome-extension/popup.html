@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Period Tracker</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Period Tracker</h1>
+    </header>
+
+    <!-- Main screen: Add new or View history -->
+    <div id="mainSection" class="section">
+      <div class="button-group-vertical">
+        <button id="newRecordBtn" class="btn btn-primary">
+          <span class="icon">📷</span>
+          Add New Record
+        </button>
+        <button id="viewHistoryBtn" class="btn btn-secondary">
+          <span class="icon">📋</span>
+          View History
+        </button>
+      </div>
+      <div id="recordCount" class="record-count"></div>
+    </div>
+
+    <!-- Photo selection screen -->
+    <div id="uploadSection" class="section hidden">
+      <p class="description">Please select a photo</p>
+      <input type="file" id="fileInput" accept="image/*" style="display: none;">
+      <button id="selectPhotoBtn" class="btn btn-primary">
+        <span class="icon">📷</span>
+        Select Photo
+      </button>
+      <button id="backToMainBtn" class="btn btn-text">← Back</button>
+    </div>
+
+    <!-- Confirmation/Edit screen -->
+    <div id="editSection" class="section hidden">
+      <div class="preview-container">
+        <img id="previewImage" class="preview-image" alt="Selected photo">
+      </div>
+
+      <div class="form-group">
+        <label for="dateInput">Date & Time</label>
+        <input type="datetime-local" id="dateInput" class="input">
+        <p class="hint">Extracted from photo (editable)</p>
+      </div>
+
+      <div class="form-group">
+        <label for="amountInput">Flow Amount (ml)</label>
+        <div class="input-with-button">
+          <input type="number" id="amountInput" class="input" placeholder="e.g., 30" min="0" max="50" step="1">
+          <button id="aiEstimateBtn" class="btn btn-icon" title="Re-estimate with AI" aria-label="Re-estimate with AI">🤖</button>
+        </div>
+        <p class="hint">AI estimated or enter manually (0-50ml, integers only)</p>
+      </div>
+
+      <div class="form-group">
+        <label for="memoInput">Notes (optional)</label>
+        <textarea id="memoInput" class="input textarea" rows="3" placeholder="Note any symptoms or observations"></textarea>
+      </div>
+
+      <div class="button-group">
+        <button id="cancelEditBtn" class="btn btn-secondary">Cancel</button>
+        <button id="saveBtn" class="btn btn-primary">Save</button>
+      </div>
+    </div>
+
+    <!-- Success screen -->
+    <div id="successSection" class="section hidden">
+      <div class="success-icon">✓</div>
+      <p class="success-message">Saved successfully</p>
+
+      <div class="copy-preview">
+        <p class="copy-preview-label">Saved data:</p>
+        <pre id="copiedText" class="copy-preview-text"></pre>
+      </div>
+
+      <div class="button-group-vertical">
+        <button id="newRecordFromSuccessBtn" class="btn btn-primary">Add New Record</button>
+        <button id="viewHistoryFromSuccessBtn" class="btn btn-secondary">View History</button>
+      </div>
+    </div>
+
+    <!-- History screen -->
+    <div id="historySection" class="section hidden">
+      <div class="history-header">
+        <h2>Record History</h2>
+        <button id="closeHistoryBtn" class="btn btn-text">← Back</button>
+      </div>
+
+      <div id="historyList" class="history-list">
+        <!-- Record cards will be added dynamically -->
+      </div>
+
+      <div id="deleteAllSection" class="delete-all-section hidden">
+        <button id="deleteAllBtn" class="btn btn-danger">Delete All Records</button>
+      </div>
+    </div>
+
+    <!-- Error display -->
+    <div id="errorSection" class="section hidden">
+      <div class="error-icon">⚠</div>
+      <p class="error-message" id="errorMessage"></p>
+      <button id="retryBtn" class="btn btn-secondary">Back</button>
+    </div>
+
+    <!-- Loading -->
+    <div id="loadingOverlay" class="loading-overlay hidden">
+      <div class="spinner"></div>
+      <p>Processing...</p>
+    </div>
+  </div>
+
+  <script src="lib/exif.js"></script>
+  <script src="lib/storage.js"></script>
+  <script src="lib/prompt-api.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>

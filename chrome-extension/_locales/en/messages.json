@@ -1,0 +1,78 @@
+{
+  "extensionName": {
+    "message": "Period Tracker",
+    "description": "Name of the extension"
+  },
+  "extensionDescription": {
+    "message": "Track menstrual flow with photo analysis and local storage",
+    "description": "Description of the extension"
+  },
+  "buttonAddRecord": {
+    "message": "Add New Record",
+    "description": "Button to add new record"
+  },
+  "buttonViewHistory": {
+    "message": "View History",
+    "description": "Button to view history"
+  },
+  "buttonSelectPhoto": {
+    "message": "Select Photo",
+    "description": "Button to select photo"
+  },
+  "labelDateTime": {
+    "message": "Date & Time",
+    "description": "Label for datetime field"
+  },
+  "labelAmount": {
+    "message": "Flow Amount (ml)",
+    "description": "Label for amount field"
+  },
+  "labelMemo": {
+    "message": "Notes",
+    "description": "Label for memo field"
+  },
+  "buttonSaveAndCopy": {
+    "message": "Save & Copy",
+    "description": "Button to save and copy"
+  },
+  "buttonCopy": {
+    "message": "Copy",
+    "description": "Button to copy"
+  },
+  "buttonDelete": {
+    "message": "Delete",
+    "description": "Button to delete"
+  },
+  "buttonDeleteAll": {
+    "message": "Delete All Records",
+    "description": "Button to delete all records"
+  },
+  "messageCopied": {
+    "message": "✓ Copied to clipboard",
+    "description": "Success message after copying"
+  },
+  "messageNoRecords": {
+    "message": "No records yet",
+    "description": "Message when no records exist"
+  },
+  "buttonAddFirst": {
+    "message": "Add First Record",
+    "description": "Button to add first record"
+  },
+  "confirmDeleteAll": {
+    "message": "Delete all records? This action cannot be undone.",
+    "description": "Confirmation dialog for delete all"
+  },
+  "confirmDelete": {
+    "message": "Delete this record?",
+    "description": "Confirmation dialog for delete single record"
+  },
+  "errorNoExif": {
+    "message": "No EXIF data found. Using file modification date.",
+    "description": "Error message for missing EXIF"
+  },
+  "errorLoadImage": {
+    "message": "Failed to load image",
+    "description": "Error message for image load failure"
+  }
+}
